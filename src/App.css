@@ -1,38 +1,89 @@
-.App {
+#root,body{
+  height: 100%;
+  box-sizing: border-box;
+  font-family: cursive;
+  background-color: #d6249f;
+}
+
+.Header{
   text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, button{
+  font-size: 30px;
+  font-family: cursive;
+  border-radius: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover{
+  color: #ff0000;
+  transition: .5ms ease-in-out;
+  transform: rotate3d();
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  border-radius: 30%;
+}
+
+input:hover{
+  color: #ff0000;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 30%;
+}
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+
+
+
+.Post-Box{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 280px;
+  width: 280px;
+  border: 2px solid black;
+  margin: 15px;
+  margin-left: 40px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #285AEB;
 }
 
-.App-link {
-  color: #61dafb;
+.Post-Box:hover{
+  transition: .5ms ease-in-out;
+  color: #ff0000;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-color:linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Title{
+  margin-top: 5px;
+  height: 70px;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+
+.body{
+  width: 100%;
+  border-top: 2px solid #fff;
+  text-align: center;
+  margin: 5px;
+  height: 190px;
+  border-bottom: 2px solid #fff;
+}
+
+a{
+  text-decoration: none;
+  color:#fff;
 }
